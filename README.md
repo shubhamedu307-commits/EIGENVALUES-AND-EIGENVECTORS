@@ -17,11 +17,15 @@ To write a python program to find the Eigenvalues and Eigen Vectors
 #RegisterNumber:26013866
 
 import os
+
 os.environ["OPENBLAS_NUM_THREADS"]="1"
 
 import numpy as np
+
 A = np.array([[2, -3, 0], [2, -5, 0], [0, 0, 3]])
+
 values, vectors = np.linalg.eig(A)
+
 print("Eigen values are {} and Eigen Vectors are {}".format(values, vectors))
 
 <img width="870" height="652" alt="Exp-04 - Record Eigen Values and Eigen Vectors" src="https://github.com/user-attachments/assets/da70bf6d-7bde-412d-98ff-3d3518429939" />
